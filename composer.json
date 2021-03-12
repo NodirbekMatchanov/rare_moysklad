@@ -19,5 +19,11 @@
         "psr-4": {
             "rare\\mysklad\\": ""
         }
-    }
+    },
+    "repositories":[
+        {
+            "type": "git",
+            "url": "https://github.com/NodirbekMatchanov/rare_moysklad.git"
+        }
+    ]
 }
