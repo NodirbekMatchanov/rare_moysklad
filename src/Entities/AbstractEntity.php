@@ -76,7 +76,7 @@ abstract class AbstractEntity implements \JsonSerializable {
      * @param array $fields
      * @param ConstructionSpecs|null $specs
      */
-    public function __construct(rare\mysklad $skladInstance, $fields = [], ConstructionSpecs $specs = null)
+    public function __construct(MoySklad $skladInstance, $fields = [], ConstructionSpecs $specs = null)
     {
         if ( !$specs ) $specs = ConstructionSpecs::create();
         if ( is_array($fields) === false && is_object($fields) === false) $fields = [$fields];
@@ -167,7 +167,7 @@ abstract class AbstractEntity implements \JsonSerializable {
      * @param QuerySpecs|null $querySpecs
      * @return EntityQuery
      */
-    public static function query(rare\mysklad &$skladInstance, QuerySpecs $querySpecs = null){
+    public static function query(MoySklad &$skladInstance, QuerySpecs $querySpecs = null){
         $static = get_called_class();
         $eq = new EntityQuery($skladInstance, static::class, $querySpecs);
         $eq->setResponseAttributesMapper($static, "listQueryResponseAttributeMapper");
@@ -296,11 +296,11 @@ abstract class AbstractEntity implements \JsonSerializable {
 
     /**
      * Get entity metadata information
-     * @param rare\mysklad $sklad
+     * @param MoySklad
      * @return stdClass
      * @throws \Throwable
      */
-    public static function getMetaData(rare\mysklad $sklad){
+    public static function getMetaData(MoySklad $sklad){
         $res = $sklad->getClient()->get(
             ApiUrlRegistry::instance()->getMetadataUrl(static::$entityName)
         );

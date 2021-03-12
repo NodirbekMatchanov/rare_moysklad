@@ -1,6 +1,6 @@
 <?php
 
-namespace MoySklad\Interfaces;
+namespace rare\mysklad\Interfaces;
 
 interface DoesNotSupportMutationInterface{
 

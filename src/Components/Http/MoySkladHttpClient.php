@@ -27,7 +27,7 @@ class MoySkladHttpClient
     public function __construct($access_token, $subdomain = "online")
     {
         $this->access_token = $access_token;
-        $this->endpoint = "https://" . $subdomain . ".moysklad.ru/api/remap/1.1/";
+        $this->endpoint = "https://" . $subdomain . ".moysklad.ru/api/remap/1.2/";
     }
 
     public function setToken($access_token)
