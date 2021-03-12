@@ -1,8 +1,8 @@
 <?php
 
-namespace MoySklad\Entities\Documents\Cash;
+namespace rare\mysklad\Entities\Documents\Cash;
 
-use MoySklad\Entities\Organization;
+use rare\mysklad\Entities\Organization;
 
 class CashOut extends AbstractCash{
     public static $entityName = 'cashout';

@@ -1,8 +1,8 @@
 <?php
 
-namespace MoySklad\Components\Fields;
+namespace rare\mysklad\Components\Fields;
 
-use MoySklad\Entities\AbstractEntity;
+use rare\mysklad\Entities\AbstractEntity;
 
 /**
  * Class for storing different fields

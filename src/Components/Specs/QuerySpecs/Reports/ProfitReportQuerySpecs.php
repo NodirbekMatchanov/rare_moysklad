@@ -1,9 +1,9 @@
 <?php
 
-namespace MoySklad\Components\Specs\QuerySpecs\Reports;
+namespace rare\mysklad\Components\Specs\QuerySpecs\Reports;
 
 
-use MoySklad\Components\Specs\QuerySpecs\QuerySpecs;
+use rare\mysklad\Components\Specs\QuerySpecs\QuerySpecs;
 
 class ProfitReportQuerySpecs extends QuerySpecs {
     protected static $cachedDefaultSpecs = null;

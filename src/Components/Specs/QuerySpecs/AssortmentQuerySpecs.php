@@ -1,6 +1,6 @@
 <?php
 
-namespace MoySklad\Components\Specs\QuerySpecs;
+namespace rare\mysklad\Components\Specs\QuerySpecs;
 
 class AssortmentQuerySpecs extends QuerySpecs {
     protected static $cachedDefaultSpecs = null;

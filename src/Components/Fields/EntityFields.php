@@ -1,6 +1,6 @@
 <?php
 
-namespace MoySklad\Components\Fields;
+namespace rare\mysklad\Components\Fields;
 
 /**
  * Class EntityFields

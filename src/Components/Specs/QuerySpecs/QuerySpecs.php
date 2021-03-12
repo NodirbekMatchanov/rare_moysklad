@@ -1,9 +1,9 @@
 <?php
 
-namespace MoySklad\Components\Specs\QuerySpecs;
+namespace rare\mysklad\Components\Specs\QuerySpecs;
 
-use MoySklad\Components\Specs\AbstractSpecs;
-use MoySklad\Utils\CommonDate;
+use rare\mysklad\Components\Specs\AbstractSpecs;
+use rare\mysklad\Utils\CommonDate;
 
 class QuerySpecs extends AbstractSpecs {
     protected static $cachedDefaultSpecs = null;

@@ -1,8 +1,8 @@
 <?php
 
-namespace MoySklad\Entities\Documents\Templates;
+namespace rare\mysklad\Entities\Documents\Templates;
 
-use MoySklad\Entities\AbstractEntity;
+use rare\mysklad\Entities\AbstractEntity;
 
 class AbstractTemplate extends AbstractEntity  {
     public static $entityName = 'a_template';

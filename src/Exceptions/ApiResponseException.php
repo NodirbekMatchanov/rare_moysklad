@@ -1,6 +1,6 @@
 <?php
 
-namespace MoySklad\Exceptions;
+namespace rare\mysklad\Exceptions;
 
 /**
  * Request did not fail, but response contained "errors" field

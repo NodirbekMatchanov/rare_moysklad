@@ -1,12 +1,12 @@
 <?php
 
-namespace MoySklad\Components;
+namespace rare\mysklad\Components;
 
-use MoySklad\Entities\AbstractEntity;
-use MoySklad\Lists\EntityList;
-use MoySklad\MoySklad;
-use MoySklad\Registers\ApiUrlRegistry;
-use MoySklad\Traits\AccessesSkladInstance;
+use rare\mysklad\Entities\AbstractEntity;
+use rare\mysklad\Lists\EntityList;
+use rare\mysklad\MoySklad;
+use rare\mysklad\Registers\ApiUrlRegistry;
+use rare\mysklad\Traits\AccessesSkladInstance;
 
 /**
  * Used for requesting with multiple entities

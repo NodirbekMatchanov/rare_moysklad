@@ -1,6 +1,6 @@
 <?php
 
-namespace MoySklad\Components;
+namespace rare\mysklad\Components;
 
 /**
  * Used for returning results with expanded relations

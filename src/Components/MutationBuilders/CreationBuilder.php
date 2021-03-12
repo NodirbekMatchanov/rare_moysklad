@@ -1,11 +1,11 @@
 <?php
 
-namespace MoySklad\Components\MutationBuilders;
+namespace rare\mysklad\Components\MutationBuilders;
 
-use MoySklad\Components\MassRequest;
-use MoySklad\Components\Specs\CreationSpecs;
-use MoySklad\Entities\AbstractEntity;
-use MoySklad\Exceptions\IncompleteCreationFieldsException;
+use rare\mysklad\Components\MassRequest;
+use rare\mysklad\Components\Specs\CreationSpecs;
+use rare\mysklad\Entities\AbstractEntity;
+use rare\mysklad\Exceptions\IncompleteCreationFieldsException;
 
 class CreationBuilder extends AbstractMutationBuilder {
     /**

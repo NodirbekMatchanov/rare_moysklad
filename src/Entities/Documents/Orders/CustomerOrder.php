@@ -1,6 +1,6 @@
 <?php
 
-namespace MoySklad\Entities\Documents\Orders;
+namespace rare\mysklad\Entities\Documents\Orders;
 
 
 class CustomerOrder extends AbstractOrder  {

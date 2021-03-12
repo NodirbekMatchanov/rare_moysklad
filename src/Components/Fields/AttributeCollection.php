@@ -1,9 +1,9 @@
 <?php
 
-namespace MoySklad\Components\Fields;
+namespace rare\mysklad\Components\Fields;
 
-use MoySklad\Entities\Misc\Attribute;
-use MoySklad\Registers\EntityRegistry;
+use rare\mysklad\Entities\Misc\Attribute;
+use rare\mysklad\Registers\EntityRegistry;
 
 /**
  * "attributes" field of entity

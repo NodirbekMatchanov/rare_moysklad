@@ -1,6 +1,6 @@
 <?php
 
-namespace MoySklad\Entities\Documents\Processings;
+namespace rare\mysklad\Entities\Documents\Processings;
 
 
 class ProcessingProduct extends AbstractProcessing

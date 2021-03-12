@@ -1,9 +1,9 @@
 <?php
 
-namespace MoySklad\Exceptions;
+namespace rare\mysklad\Exceptions;
 
 use \Exception;
-use MoySklad\Interfaces\DoesNotSupportMutationInterface;
+use rare\mysklad\Interfaces\DoesNotSupportMutationInterface;
 
 class EntityCantBeMutatedException extends Exception{
     public function __construct(DoesNotSupportMutationInterface $entity, $code = 0, Exception $previous = null)

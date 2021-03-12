@@ -1,9 +1,9 @@
 <?php
 
-namespace MoySklad\Entities\Documents\Orders;
+namespace rare\mysklad\Entities\Documents\Orders;
 
-use MoySklad\Entities\Documents\AbstractDocument;
-use MoySklad\Entities\Organization;
+use rare\mysklad\Entities\Documents\AbstractDocument;
+use rare\mysklad\Entities\Organization;
 
 class AbstractOrder extends AbstractDocument{
     public static $entityName = '_a_order';

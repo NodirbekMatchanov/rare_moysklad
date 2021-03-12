@@ -1,14 +1,14 @@
 <?php
 
-namespace MoySklad\Components\Fields;
+namespace rare\mysklad\Components\Fields;
 
-use MoySklad\Components\Expand;
-use MoySklad\Entities\AbstractEntity;
-use MoySklad\Exceptions\Relations\RelationDoesNotExistException;
-use MoySklad\Exceptions\Relations\RelationIsList;
-use MoySklad\Exceptions\Relations\RelationIsSingle;
-use MoySklad\Lists\RelationEntityList;
-use MoySklad\MoySklad;
+use rare\mysklad\Components\Expand;
+use rare\mysklad\Entities\AbstractEntity;
+use rare\mysklad\Exceptions\Relations\RelationDoesNotExistException;
+use rare\mysklad\Exceptions\Relations\RelationIsList;
+use rare\mysklad\Exceptions\Relations\RelationIsSingle;
+use rare\mysklad\Lists\RelationEntityList;
+use rare\mysklad\MoySklad;
 
 class EntityRelation extends AbstractFieldAccessor {
     private $relatedByClass = null;

@@ -1,16 +1,16 @@
 <?php
 
-namespace MoySklad\Components\Query;
+namespace rare\mysklad\Components\Query;
 
-use MoySklad\Components\Expand;
-use MoySklad\Components\Fields\MetaField;
-use MoySklad\Components\FilterQuery;
-use MoySklad\Components\Http\RequestConfig;
-use MoySklad\Components\Specs\QuerySpecs\QuerySpecs;
-use MoySklad\Lists\EntityList;
-use MoySklad\MoySklad;
-use MoySklad\Registers\ApiUrlRegistry;
-use MoySklad\Traits\AccessesSkladInstance;
+use rare\mysklad\Components\Expand;
+use rare\mysklad\Components\Fields\MetaField;
+use rare\mysklad\Components\FilterQuery;
+use rare\mysklad\Components\Http\RequestConfig;
+use rare\mysklad\Components\Specs\QuerySpecs\QuerySpecs;
+use rare\mysklad\Lists\EntityList;
+use rare\mysklad\MoySklad;
+use rare\mysklad\Registers\ApiUrlRegistry;
+use rare\mysklad\Traits\AccessesSkladInstance;
 
 abstract class AbstractQuery{
     use AccessesSkladInstance;

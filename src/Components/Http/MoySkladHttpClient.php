@@ -1,13 +1,13 @@
 <?php
 
-namespace MoySklad\Components\Http;
+namespace rare\mysklad\Components\Http;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ClientException;
-use MoySklad\Exceptions\ApiResponseException;
-use MoySklad\Exceptions\PosTokenException;
-use MoySklad\Exceptions\RequestFailedException;
-use MoySklad\Exceptions\ResponseParseException;
+use rare\mysklad\Exceptions\ApiResponseException;
+use rare\mysklad\Exceptions\PosTokenException;
+use rare\mysklad\Exceptions\RequestFailedException;
+use rare\mysklad\Exceptions\ResponseParseException;
 
 class MoySkladHttpClient
 {

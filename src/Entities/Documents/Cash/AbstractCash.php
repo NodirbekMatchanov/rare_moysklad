@@ -1,8 +1,8 @@
 <?php
 
-namespace MoySklad\Entities\Documents\Cash;
+namespace rare\mysklad\Entities\Documents\Cash;
 
-use MoySklad\Entities\Documents\AbstractDocument;
+use rare\mysklad\Entities\Documents\AbstractDocument;
 
 class AbstractCash extends AbstractDocument{
     public static $entityName = 'a_cash';

@@ -1,6 +1,6 @@
 <?php
 
-namespace MoySklad\Components\Specs;
+namespace rare\mysklad\Components\Specs;
 
 use MoySklad\Exceptions\UnknownSpecException;
 

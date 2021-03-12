@@ -1,10 +1,10 @@
 <?php
 
-namespace MoySklad\Components\Fields;
+namespace rare\mysklad\Components\Fields;
 
-use MoySklad\Components\Specs\ConstructionSpecs;
-use MoySklad\Components\Specs\LinkingSpecs;
-use MoySklad\Entities\AbstractEntity;
+use rare\mysklad\Components\Specs\ConstructionSpecs;
+use rare\mysklad\Components\Specs\LinkingSpecs;
+use rare\mysklad\Entities\AbstractEntity;
 
 /**
  * Class EntityLinker

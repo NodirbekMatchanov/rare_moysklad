@@ -1,9 +1,9 @@
 <?php
 
-namespace MoySklad\Components\Fields;
+namespace rare\mysklad\Components\Fields;
 
-use MoySklad\Exceptions\UnknownEntityException;
-use MoySklad\Registers\EntityRegistry;
+use rare\mysklad\Exceptions\UnknownEntityException;
+use rare\mysklad\Registers\EntityRegistry;
 
 /**
  * "meta" field of entity

@@ -1,10 +1,10 @@
 <?php
 
-namespace MoySklad\Components\MutationBuilders;
+namespace rare\mysklad\Components\MutationBuilders;
 
-use MoySklad\Entities\AbstractEntity;
-use MoySklad\Exceptions\EntityHasNoIdException;
-use MoySklad\Registers\ApiUrlRegistry;
+use rare\mysklad\Entities\AbstractEntity;
+use rare\mysklad\Exceptions\EntityHasNoIdException;
+use rare\mysklad\Registers\ApiUrlRegistry;
 
 class UpdateBuilder extends AbstractMutationBuilder {
     /**

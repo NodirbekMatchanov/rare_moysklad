@@ -1,10 +1,10 @@
 <?php
 
-namespace MoySklad\Components\Fields;
+namespace rare\mysklad\Components\Fields;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\RequestOptions;
-use MoySklad\Exceptions\InvalidUrlException;
+use rare\mysklad\Exceptions\InvalidUrlException;
 
 class ImageField extends AbstractFieldAccessor{
     /**

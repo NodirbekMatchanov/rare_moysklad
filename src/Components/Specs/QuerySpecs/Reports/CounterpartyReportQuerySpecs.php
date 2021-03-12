@@ -1,9 +1,9 @@
 <?php
 
-namespace MoySklad\Components\Specs\QuerySpecs\Reports;
+namespace rare\mysklad\Components\Specs\QuerySpecs\Reports;
 
 
-use MoySklad\Components\Specs\QuerySpecs\QuerySpecs;
+use rare\mysklad\Components\Specs\QuerySpecs\QuerySpecs;
 
 class CounterpartyReportQuerySpecs extends QuerySpecs {
     protected static $cachedDefaultSpecs = null;

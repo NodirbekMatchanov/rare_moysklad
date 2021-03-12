@@ -1,8 +1,8 @@
 <?php
 
-namespace MoySklad\Entities\Documents\Positions;
+namespace rare\mysklad\Entities\Documents\Positions;
 
-use MoySklad\Entities\Documents\AbstractDocument;
+use rare\mysklad\Entities\Documents\AbstractDocument;
 
 class AbstractPosition extends AbstractDocument{
     public static $entityName = 'a_position';

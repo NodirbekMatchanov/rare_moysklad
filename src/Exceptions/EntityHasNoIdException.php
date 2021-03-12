@@ -3,7 +3,7 @@
 namespace rare\mysklad\Exceptions;
 
 use \Exception;
-use MoySklad\Entities\AbstractEntity;
+use rare\mysklad\Entities\AbstractEntity;
 
 /**
  * Entity has no "id" field

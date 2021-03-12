@@ -1,11 +1,11 @@
 <?php
 
-namespace MoySklad\Components\Query;
+namespace rare\mysklad\Components\Query;
 
-use MoySklad\Components\Expand;
-use MoySklad\Entities\AbstractEntity;
-use MoySklad\Lists\EntityList;
-use MoySklad\Registers\ApiUrlRegistry;
+use rare\mysklad\Components\Expand;
+use rare\mysklad\Entities\AbstractEntity;
+use rare\mysklad\Lists\EntityList;
+use rare\mysklad\Registers\ApiUrlRegistry;
 
 class EntityQuery extends AbstractQuery {
     protected static $entityListClass = EntityList::class;

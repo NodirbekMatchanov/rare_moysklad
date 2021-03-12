@@ -1,9 +1,9 @@
 <?php
 
-namespace MoySklad\Entities\Documents\PriceLists;
+namespace rare\mysklad\Entities\Documents\PriceLists;
 
-use MoySklad\Entities\Documents\AbstractDocument;
-use MoySklad\Entities\Organization;
+use rare\mysklad\Entities\Documents\AbstractDocument;
+use rare\mysklad\Entities\Organization;
 
 class PriceListRow extends AbstractDocument {
     public static $entityName = 'pricelistrow';

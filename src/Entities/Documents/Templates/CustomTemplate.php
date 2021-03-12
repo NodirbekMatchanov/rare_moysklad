@@ -1,6 +1,6 @@
 <?php
 
-namespace MoySklad\Entities\Documents\Templates;
+namespace rare\mysklad\Entities\Documents\Templates;
 
 class CustomTemplate extends AbstractTemplate  {
     public static $entityName = 'customtemplate';

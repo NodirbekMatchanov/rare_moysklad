@@ -1,6 +1,6 @@
 <?php
 
-namespace MoySklad\Components\Http;
+namespace rare\mysklad\Components\Http;
 
 abstract class RequestLog{
     private static

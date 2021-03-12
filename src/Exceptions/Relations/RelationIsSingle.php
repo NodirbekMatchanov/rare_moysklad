@@ -1,6 +1,6 @@
 <?php
 
-namespace MoySklad\Exceptions\Relations;
+namespace rare\mysklad\Exceptions\Relations;
 
 use \Exception;
 

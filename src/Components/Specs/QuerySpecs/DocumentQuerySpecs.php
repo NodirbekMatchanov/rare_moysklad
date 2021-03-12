@@ -1,6 +1,6 @@
 <?php
 
-namespace MoySklad\Components\Specs\QuerySpecs;
+namespace rare\mysklad\Components\Specs\QuerySpecs;
 
 
 class DocumentQuerySpecs extends QuerySpecs {

@@ -1,6 +1,6 @@
 <?php
 
-namespace MoySklad\Components\Specs;
+namespace rare\mysklad\Components\Specs;
 
 
 class ConstructionSpecs extends AbstractSpecs {

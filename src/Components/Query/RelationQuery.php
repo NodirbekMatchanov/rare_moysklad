@@ -1,8 +1,8 @@
 <?php
 
-namespace MoySklad\Components\Query;
+namespace rare\mysklad\Components\Query;
 
-use MoySklad\Lists\RelationEntityList;
+use rare\mysklad\Lists\RelationEntityList;
 
 class RelationQuery extends AbstractQuery {
     protected static $entityListClass = RelationEntityList::class;

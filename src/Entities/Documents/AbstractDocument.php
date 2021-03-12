@@ -1,21 +1,21 @@
 <?php
 
-namespace MoySklad\Entities\Documents;
+namespace rare\mysklad\Entities\Documents;
 
-use MoySklad\Components\Http\RequestConfig;
-use MoySklad\Components\Http\RequestLog;
-use MoySklad\Components\Specs\QuerySpecs\QuerySpecs;
-use MoySklad\Entities\AbstractEntity;
-use MoySklad\Entities\Documents\Templates\AbstractTemplate;
-use MoySklad\Entities\Documents\Templates\CustomTemplate;
-use MoySklad\Entities\Documents\Templates\EmbeddedTemplate;
-use MoySklad\Entities\Misc\Attribute;
-use MoySklad\Entities\Misc\Export;
-use MoySklad\Entities\Misc\Publication;
-use MoySklad\Exceptions\UnknownEntityException;
-use MoySklad\Lists\EntityList;
-use MoySklad\MoySklad;
-use MoySklad\Registers\ApiUrlRegistry;
+use rare\mysklad\Components\Http\RequestConfig;
+use rare\mysklad\Components\Http\RequestLog;
+use rare\mysklad\Components\Specs\QuerySpecs\QuerySpecs;
+use rare\mysklad\Entities\AbstractEntity;
+use rare\mysklad\Entities\Documents\Templates\AbstractTemplate;
+use rare\mysklad\Entities\Documents\Templates\CustomTemplate;
+use rare\mysklad\Entities\Documents\Templates\EmbeddedTemplate;
+use rare\mysklad\Entities\Misc\Attribute;
+use rare\mysklad\Entities\Misc\Export;
+use rare\mysklad\Entities\Misc\Publication;
+use rare\mysklad\Exceptions\UnknownEntityException;
+use rare\mysklad\Lists\EntityList;
+use rare\mysklad\MoySklad;
+use rare\mysklad\Registers\ApiUrlRegistry;
 
 class AbstractDocument extends AbstractEntity{
     public static $entityName = 'a_document';
