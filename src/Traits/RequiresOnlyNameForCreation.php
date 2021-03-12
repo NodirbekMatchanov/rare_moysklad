@@ -1,6 +1,6 @@
 <?php
 
-namespace MoySklad\Traits;
+namespace rare\mysklad\Traits;
 
 trait RequiresOnlyNameForCreation{
     public static function getFieldsRequiredForCreation()

@@ -1,9 +1,9 @@
 <?php
 
-namespace MoySklad\Traits;
+namespace rare\mysklad\Traits;
 
 
-use MoySklad\MoySklad;
+use rare\mysklad\MoySklad;
 
 trait AccessesSkladInstance{
     /**

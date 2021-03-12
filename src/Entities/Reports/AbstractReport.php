@@ -1,13 +1,13 @@
 <?php
 
-namespace MoySklad\Entities\Reports;
+namespace rare\mysklad\Entities\Reports;
 
-use MoySklad\Components\Specs\EmptySpecs;
-use MoySklad\Components\Specs\QuerySpecs\QuerySpecs;
-use MoySklad\Entities\AbstractEntity;
-use MoySklad\Interfaces\DoesNotSupportMutationInterface;
-use MoySklad\MoySklad;
-use MoySklad\Registers\ApiUrlRegistry;
+use rare\mysklad\Components\Specs\EmptySpecs;
+use rare\mysklad\Components\Specs\QuerySpecs\QuerySpecs;
+use rare\mysklad\Entities\AbstractEntity;
+use rare\mysklad\Interfaces\DoesNotSupportMutationInterface;
+use rare\mysklad\MoySklad;
+use rare\mysklad\Registers\ApiUrlRegistry;
 
 abstract class AbstractReport extends AbstractEntity implements DoesNotSupportMutationInterface {
     public static $entityName = 'report';

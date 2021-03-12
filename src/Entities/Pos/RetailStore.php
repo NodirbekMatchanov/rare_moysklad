@@ -1,10 +1,10 @@
 <?php
 
-namespace MoySklad\Entities\Pos;
+namespace rare\mysklad\Entities\Pos;
 
-use MoySklad\Components\Http\RequestConfig;
-use MoySklad\Interfaces\DoesNotSupportMutationInterface;
-use MoySklad\Registers\ApiUrlRegistry;
+use rare\mysklad\Components\Http\RequestConfig;
+use rare\mysklad\Interfaces\DoesNotSupportMutationInterface;
+use rare\mysklad\Registers\ApiUrlRegistry;
 
 class RetailStore extends PosEntity implements DoesNotSupportMutationInterface{
     public static $entityName = 'retailstore';

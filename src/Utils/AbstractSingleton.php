@@ -1,6 +1,6 @@
 <?php
 
-namespace MoySklad\Utils;
+namespace rare\mysklad\Utils;
 
 abstract class AbstractSingleton{
     protected static $instance = null;

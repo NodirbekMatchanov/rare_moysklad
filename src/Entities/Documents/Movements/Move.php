@@ -1,8 +1,8 @@
 <?php
 
-namespace MoySklad\Entities\Documents\Movements;
+namespace rare\mysklad\Entities\Documents\Movements;
 
-use MoySklad\Entities\Organization;
+use rare\mysklad\Entities\Organization;
 
 class Move extends AbstractMovement {
     public static $entityName = 'move';

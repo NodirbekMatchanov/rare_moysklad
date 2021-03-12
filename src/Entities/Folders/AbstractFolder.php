@@ -1,9 +1,9 @@
 <?php
 
-namespace MoySklad\Entities\Folders;
+namespace rare\mysklad\Entities\Folders;
 
-use MoySklad\Entities\AbstractEntity;
-use MoySklad\Traits\RequiresOnlyNameForCreation;
+use rare\mysklad\Entities\AbstractEntity;
+use rare\mysklad\Traits\RequiresOnlyNameForCreation;
 
 class AbstractFolder extends AbstractEntity
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace MoySklad\Entities\Products;
+namespace rare\mysklad\Entities\Products;
 
-use MoySklad\Exceptions\IncompatibleFieldsException;
-use MoySklad\Traits\AttachesImage;
-use MoySklad\Traits\RequiresOnlyNameForCreation;
+use rare\mysklad\Exceptions\IncompatibleFieldsException;
+use rare\mysklad\Traits\AttachesImage;
+use rare\mysklad\Traits\RequiresOnlyNameForCreation;
 
 class Product extends AbstractProduct {
     use AttachesImage, RequiresOnlyNameForCreation;

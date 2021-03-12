@@ -1,11 +1,11 @@
 <?php
 
-namespace MoySklad\Lists;
+namespace rare\mysklad\Lists;
 
-use MoySklad\Components\Fields\MetaField;
-use MoySklad\Components\Query\RelationQuery;
-use MoySklad\MoySklad;
-use MoySklad\Registers\ApiUrlRegistry;
+use rare\mysklad\Components\Fields\MetaField;
+use rare\mysklad\Components\Query\RelationQuery;
+use rare\mysklad\MoySklad;
+use rare\mysklad\Registers\ApiUrlRegistry;
 
 /**
  * EntityList with meta. Used for query

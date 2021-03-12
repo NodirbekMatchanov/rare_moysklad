@@ -1,11 +1,11 @@
 <?php
 
-namespace MoySklad\Traits;
+namespace rare\mysklad\Traits;
 
-use MoySklad\Entities\AbstractEntity;
-use MoySklad\Exceptions\ApiResponseException;
-use MoySklad\Exceptions\EntityHasNoIdException;
-use MoySklad\Registers\ApiUrlRegistry;
+use rare\mysklad\Entities\AbstractEntity;
+use rare\mysklad\Exceptions\ApiResponseException;
+use rare\mysklad\Exceptions\EntityHasNoIdException;
+use rare\mysklad\Registers\ApiUrlRegistry;
 
 trait Deletes{
 

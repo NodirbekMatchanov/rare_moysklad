@@ -1,9 +1,9 @@
 <?php
 
-namespace MoySklad\Entities\Documents\Processings;
+namespace rare\mysklad\Entities\Documents\Processings;
 
-use MoySklad\Entities\Documents\AbstractDocument;
-use MoySklad\Entities\Organization;
+use rare\mysklad\Entities\Documents\AbstractDocument;
+use rare\mysklad\Entities\Organization;
 
 class ProcessingOrder extends AbstractDocument {
     public static $entityName = 'processingorder';

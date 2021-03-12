@@ -1,6 +1,6 @@
 <?php
 
-namespace MoySklad\Entities\Documents\Movements;
+namespace rare\mysklad\Entities\Documents\Movements;
 
 
 use MoySklad\Entities\Organization;

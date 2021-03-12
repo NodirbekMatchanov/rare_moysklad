@@ -1,10 +1,10 @@
 <?php
 
-namespace MoySklad\Entities\Reports;
+namespace rare\mysklad\Entities\Reports;
 
-use MoySklad\Components\Specs\QuerySpecs\Reports\ProfitReportQuerySpecs;
-use MoySklad\Entities\Documents\AbstractDocument;
-use MoySklad\MoySklad;
+use rare\mysklad\Components\Specs\QuerySpecs\Reports\ProfitReportQuerySpecs;
+use rare\mysklad\Entities\Documents\AbstractDocument;
+use rare\mysklad\MoySklad;
 
 class ProfitReport extends AbstractReport  {
     public static $reportName = 'profit';

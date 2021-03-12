@@ -1,6 +1,6 @@
 <?php
 
-namespace MoySklad\Entities\Documents\CommissionReports;
+namespace rare\mysklad\Entities\Documents\CommissionReports;
 
 
 class CommissionReportOut extends AbstractCommissionReport {

@@ -1,6 +1,6 @@
 <?php
 
-namespace MoySklad\Components;
+namespace rare\mysklad\Components;
 
 /**
  * Filter query is used with ListQuery::filter()

@@ -1,9 +1,9 @@
 <?php
 
-namespace MoySklad\Entities\Reports;
+namespace rare\mysklad\Entities\Reports;
 
-use MoySklad\Components\Specs\QuerySpecs\Reports\SalesReportQuerySpecs;
-use MoySklad\MoySklad;
+use rare\mysklad\Components\Specs\QuerySpecs\Reports\SalesReportQuerySpecs;
+use rare\mysklad\MoySklad;
 
 class SalesReport extends AbstractReport  {
     public static $reportName = 'sales';

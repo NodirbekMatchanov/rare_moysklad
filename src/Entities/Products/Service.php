@@ -1,8 +1,8 @@
 <?php
 
-namespace MoySklad\Entities\Products;
+namespace rare\mysklad\Entities\Products;
 
-use MoySklad\Traits\RequiresOnlyNameForCreation;
+use rare\mysklad\Traits\RequiresOnlyNameForCreation;
 
 class Service extends AbstractProduct {
     use RequiresOnlyNameForCreation;

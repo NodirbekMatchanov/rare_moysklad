@@ -17,7 +17,7 @@
     },
     "autoload": {
         "psr-4": {
-            "rare\\mysklad\\": ""
+            "rare\\mysklad\\": "src/"
         }
     },
     "repositories":[

@@ -1,12 +1,12 @@
 <?php
 
-namespace MoySklad\Lists;
+namespace rare\mysklad\Lists;
 
-use MoySklad\Components\Fields\MetaField;
-use MoySklad\Components\MassRequest;
-use MoySklad\Entities\AbstractEntity;
-use MoySklad\MoySklad;
-use MoySklad\Traits\AccessesSkladInstance;
+use rare\mysklad\Components\Fields\MetaField;
+use rare\mysklad\Components\MassRequest;
+use rare\mysklad\Entities\AbstractEntity;
+use rare\mysklad\MoySklad;
+use rare\mysklad\Traits\AccessesSkladInstance;
 
 /**
  * List of entity objects

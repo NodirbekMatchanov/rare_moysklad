@@ -1,6 +1,6 @@
 <?php
 
-namespace MoySklad\Entities;
+namespace rare\mysklad\Entities;
 
 class RetailStore extends AbstractEntity{
     public static $entityName = 'retailstore';

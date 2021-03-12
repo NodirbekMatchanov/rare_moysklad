@@ -1,8 +1,8 @@
 <?php
 
-namespace MoySklad\Entities;
+namespace rare\mysklad\Entities;
 
-use MoySklad\Traits\RequiresOnlyNameForCreation;
+use rare\mysklad\Traits\RequiresOnlyNameForCreation;
 
 class Store extends AbstractEntity{
     use RequiresOnlyNameForCreation;

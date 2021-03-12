@@ -1,8 +1,8 @@
 <?php
 
-namespace MoySklad\Entities\Documents\Returns;
+namespace rare\mysklad\Entities\Documents\Returns;
 
-use MoySklad\Entities\Documents\AbstractDocument;
+use rare\mysklad\Entities\Documents\AbstractDocument;
 
 class AbstractReturn extends AbstractDocument{
     public static $entityName = 'a_return';

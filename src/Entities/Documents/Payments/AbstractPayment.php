@@ -1,8 +1,8 @@
 <?php
 
-namespace MoySklad\Entities\Documents\Payments;
+namespace rare\mysklad\Entities\Documents\Payments;
 
-use MoySklad\Entities\Documents\AbstractDocument;
+use rare\mysklad\Entities\Documents\AbstractDocument;
 
 class AbstractPayment extends AbstractDocument{
     public static $entityName = 'a_payment';

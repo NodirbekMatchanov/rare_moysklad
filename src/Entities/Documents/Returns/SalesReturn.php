@@ -1,10 +1,10 @@
 <?php
 
-namespace MoySklad\Entities\Documents\Returns;
+namespace rare\mysklad\Entities\Documents\Returns;
 
-use MoySklad\Entities\Documents\Movements\Demand;
-use MoySklad\Entities\Organization;
-use MoySklad\Entities\Store;
+use rare\mysklad\Entities\Documents\Movements\Demand;
+use rare\mysklad\Entities\Organization;
+use rare\mysklad\Entities\Store;
 
 class SalesReturn extends AbstractReturn{
     public static $entityName = 'salesreturn';

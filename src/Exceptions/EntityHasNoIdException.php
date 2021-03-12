@@ -1,6 +1,6 @@
 <?php
 
-namespace MoySklad\Exceptions;
+namespace rare\mysklad\Exceptions;
 
 use \Exception;
 use MoySklad\Entities\AbstractEntity;

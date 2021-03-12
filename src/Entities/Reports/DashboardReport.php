@@ -1,8 +1,8 @@
 <?php
 
-namespace MoySklad\Entities\Reports;
+namespace rare\mysklad\Entities\Reports;
 
-use MoySklad\MoySklad;
+use rare\mysklad\MoySklad;
 
 class DashboardReport extends AbstractReport  {
     public static $reportName = 'dashboard';

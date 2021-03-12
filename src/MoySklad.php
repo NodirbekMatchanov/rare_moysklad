@@ -1,9 +1,9 @@
 <?php
 
-namespace MoySklad;
+namespace rare\mysklad;
 
-use MoySklad\Components\Http\MoySkladHttpClient;
-use MoySklad\Registers\EntityRegistry;
+use rare\mysklad\Components\Http\MoySkladHttpClient;
+use rare\mysklad\Registers\EntityRegistry;
 
 class MoySklad{
 

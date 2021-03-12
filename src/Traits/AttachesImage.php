@@ -1,9 +1,9 @@
 <?php
 
-namespace MoySklad\Traits;
+namespace rare\mysklad\Traits;
 
-use MoySklad\Components\Fields\ImageField;
-use MoySklad\Entities\AbstractEntity;
+use rare\mysklad\Components\Fields\ImageField;
+use rare\mysklad\Entities\AbstractEntity;
 
 trait AttachesImage{
     public function attachImage(ImageField $imageField){

@@ -1,6 +1,6 @@
 <?php
 
-namespace MoySklad\Lists;
+namespace rare\mysklad\Lists;
 
 /**
  * Iterator for EntityList

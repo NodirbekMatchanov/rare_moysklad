@@ -1,6 +1,6 @@
 <?php
 
-namespace MoySklad\Entities;
+namespace rare\mysklad\Entities;
 
 class Currency extends AbstractEntity{
     public static $entityName = 'currency';

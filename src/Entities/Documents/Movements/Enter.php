@@ -1,9 +1,9 @@
 <?php
 
-namespace MoySklad\Entities\Documents\Movements;
+namespace rare\mysklad\Entities\Documents\Movements;
 
-use MoySklad\Entities\Organization;
-use MoySklad\Entities\Store;
+use rare\mysklad\Entities\Organization;
+use rare\mysklad\Entities\Store;
 
 class Enter extends AbstractMovement {
     public static $entityName = 'enter';

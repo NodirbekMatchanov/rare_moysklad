@@ -1,6 +1,6 @@
 <?php
 
-namespace MoySklad\Entities\Documents\RetailDrawer;
+namespace rare\mysklad\Entities\Documents\RetailDrawer;
 
 class RetailDrawerCashOut extends AbstractRetailDrawer{
     public static $entityName = 'retaildrawercashout';

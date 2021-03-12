@@ -1,9 +1,9 @@
 <?php
 
-namespace MoySklad\Entities\Documents;
+namespace rare\mysklad\Entities\Documents;
 
-use MoySklad\Entities\Organization;
-use MoySklad\Entities\Store;
+use rare\mysklad\Entities\Organization;
+use rare\mysklad\Entities\Store;
 
 class Inventory extends AbstractDocument{
     public static $entityName = 'inventory';

@@ -1,6 +1,6 @@
 <?php
 
-namespace MoySklad\Entities\Documents\Invoices;
+namespace rare\mysklad\Entities\Documents\Invoices;
 
 class InvoiceOut extends AbstractInvoice{
     public static $entityName = 'invoiceout';

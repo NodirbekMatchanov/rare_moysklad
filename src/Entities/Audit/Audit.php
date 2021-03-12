@@ -1,10 +1,10 @@
 <?php
 
-namespace MoySklad\Entities\Audit;
+namespace rare\mysklad\Entities\Audit;
 
-use MoySklad\Components\Specs\QuerySpecs\QuerySpecs;
-use MoySklad\MoySklad;
-use MoySklad\Registers\ApiUrlRegistry;
+use rare\mysklad\Components\Specs\QuerySpecs\QuerySpecs;
+use rare\mysklad\MoySklad;
+use rare\mysklad\Registers\ApiUrlRegistry;
 
 class Audit extends AbstractAudit {
     public static $entityName = "audit";

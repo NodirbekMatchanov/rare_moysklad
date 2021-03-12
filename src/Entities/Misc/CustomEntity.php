@@ -1,9 +1,9 @@
 <?php
 
-namespace MoySklad\Entities\Misc;
+namespace rare\mysklad\Entities\Misc;
 
-use MoySklad\Entities\AbstractEntity;
-use MoySklad\Traits\RequiresOnlyNameForCreation;
+use rare\mysklad\Entities\AbstractEntity;
+use rare\mysklad\Traits\RequiresOnlyNameForCreation;
 
 class CustomEntity extends AbstractEntity  {
     use RequiresOnlyNameForCreation;

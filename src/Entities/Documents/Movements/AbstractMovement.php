@@ -1,10 +1,10 @@
 <?php
 
-namespace MoySklad\Entities\Documents\Movements;
+namespace rare\mysklad\Entities\Documents\Movements;
 
-use MoySklad\Entities\Documents\AbstractDocument;
-use MoySklad\Entities\Organization;
-use MoySklad\Entities\Store;
+use rare\mysklad\Entities\Documents\AbstractDocument;
+use rare\mysklad\Entities\Organization;
+use rare\mysklad\Entities\Store;
 
 class AbstractMovement extends AbstractDocument{
     public static $entityName = "a_movement";

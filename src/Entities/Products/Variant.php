@@ -1,8 +1,8 @@
 <?php
 
-namespace MoySklad\Entities\Products;
+namespace rare\mysklad\Entities\Products;
 
-use MoySklad\Entities\Misc\Characteristics;
+use rare\mysklad\Entities\Misc\Characteristics;
 
 class Variant extends AbstractProduct{
     public static $entityName = 'variant';

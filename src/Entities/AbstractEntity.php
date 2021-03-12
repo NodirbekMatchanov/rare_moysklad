@@ -1,42 +1,42 @@
 <?php
 
-namespace MoySklad\Entities;
+namespace rare\mysklad\Entities;
 
-use MoySklad\Components\Expand;
-use MoySklad\Components\Fields\AttributeCollection;
-use MoySklad\Components\Fields\EntityFields;
-use MoySklad\Components\Fields\EntityLinker;
-use MoySklad\Components\Fields\EntityRelation;
-use MoySklad\Components\Fields\MetaField;
-use MoySklad\Components\MutationBuilders\CreationBuilder;
-use MoySklad\Components\MutationBuilders\UpdateBuilder;
-use MoySklad\Components\Query\EntityQuery;
-use MoySklad\Components\Specs\ConstructionSpecs;
-use MoySklad\Components\Specs\CreationSpecs;
-use MoySklad\Components\Specs\LinkingSpecs;
-use MoySklad\Components\Specs\QuerySpecs\QuerySpecs;
-use MoySklad\Entities\Audit\AbstractAudit;
-use MoySklad\Entities\Audit\Audit;
-use MoySklad\Entities\Audit\AuditEvent;
-use MoySklad\Entities\Documents\AbstractDocument;
-use MoySklad\Entities\Misc\Attribute;
-use MoySklad\Entities\Misc\State;
-use MoySklad\Exceptions\EntityCantBeMutatedException;
-use MoySklad\Exceptions\EntityHasNoIdException;
-use MoySklad\Exceptions\EntityHasNoMetaException;
-use MoySklad\Exceptions\IncompleteCreationFieldsException;
-use MoySklad\Interfaces\DoesNotSupportMutationInterface;
-use MoySklad\Lists\EntityList;
-use MoySklad\MoySklad;
-use MoySklad\Registers\ApiUrlRegistry;
-use MoySklad\Traits\AccessesSkladInstance;
-use MoySklad\Traits\Deletes;
+use rare\mysklad\Components\Expand;
+use rare\mysklad\Components\Fields\AttributeCollection;
+use rare\mysklad\Components\Fields\EntityFields;
+use rare\mysklad\Components\Fields\EntityLinker;
+use rare\mysklad\Components\Fields\EntityRelation;
+use rare\mysklad\Components\Fields\MetaField;
+use rare\mysklad\Components\MutationBuilders\CreationBuilder;
+use rare\mysklad\Components\MutationBuilders\UpdateBuilder;
+use rare\mysklad\Components\Query\EntityQuery;
+use rare\mysklad\Components\Specs\ConstructionSpecs;
+use rare\mysklad\Components\Specs\CreationSpecs;
+use rare\mysklad\Components\Specs\LinkingSpecs;
+use rare\mysklad\Components\Specs\QuerySpecs\QuerySpecs;
+use rare\mysklad\Entities\Audit\AbstractAudit;
+use rare\mysklad\Entities\Audit\Audit;
+use rare\mysklad\Entities\Audit\AuditEvent;
+use rare\mysklad\Entities\Documents\AbstractDocument;
+use rare\mysklad\Entities\Misc\Attribute;
+use rare\mysklad\Entities\Misc\State;
+use rare\mysklad\Exceptions\EntityCantBeMutatedException;
+use rare\mysklad\Exceptions\EntityHasNoIdException;
+use rare\mysklad\Exceptions\EntityHasNoMetaException;
+use rare\mysklad\Exceptions\IncompleteCreationFieldsException;
+use rare\mysklad\Interfaces\DoesNotSupportMutationInterface;
+use rare\mysklad\Lists\EntityList;
+use rare\mysklad\MoySklad;
+use rare\mysklad\Registers\ApiUrlRegistry;
+use rare\mysklad\Traits\AccessesSkladInstance;
+use rare\mysklad\Traits\Deletes;
 use stdClass;
 
 /**
  * Root entity object
  * Class AbstractEntity
- * @package MoySklad\Entities
+ * @package rare\mysklad\Entities
  */
 abstract class AbstractEntity implements \JsonSerializable {
     use AccessesSkladInstance, Deletes;
@@ -72,11 +72,11 @@ abstract class AbstractEntity implements \JsonSerializable {
 
     /**
      * AbstractEntity constructor.
-     * @param MoySklad $skladInstance
+     * @param rare\mysklad $skladInstance
      * @param array $fields
      * @param ConstructionSpecs|null $specs
      */
-    public function __construct(MoySklad $skladInstance, $fields = [], ConstructionSpecs $specs = null)
+    public function __construct(rare\mysklad $skladInstance, $fields = [], ConstructionSpecs $specs = null)
     {
         if ( !$specs ) $specs = ConstructionSpecs::create();
         if ( is_array($fields) === false && is_object($fields) === false) $fields = [$fields];
@@ -100,7 +100,7 @@ abstract class AbstractEntity implements \JsonSerializable {
      * Returns new AbstractEntity inheritor with class taken from meta
      * @return $this
      * @throws EntityHasNoMetaException
-     * @throws \MoySklad\Exceptions\UnknownEntityException
+     * @throws \rare\mysklad\Exceptions\UnknownEntityException
      */
     public function transformToMetaClass(){
         $eMeta = $this->getMeta();
@@ -115,7 +115,7 @@ abstract class AbstractEntity implements \JsonSerializable {
 
     /**
      * Returns meta object
-     * @return \MoySklad\Components\Fields\MetaField|null
+     * @return \rare\mysklad\Components\Fields\MetaField|null
      */
     public function getMeta(){
         return $this->fields->getMeta();
@@ -163,11 +163,11 @@ abstract class AbstractEntity implements \JsonSerializable {
 
     /**
      * Get EntityQuery object which van be used for getting, filtering and searching lists
-     * @param MoySklad $skladInstance
+     * @param rare\mysklad $skladInstance
      * @param QuerySpecs|null $querySpecs
      * @return EntityQuery
      */
-    public static function query(MoySklad &$skladInstance, QuerySpecs $querySpecs = null){
+    public static function query(rare\mysklad &$skladInstance, QuerySpecs $querySpecs = null){
         $static = get_called_class();
         $eq = new EntityQuery($skladInstance, static::class, $querySpecs);
         $eq->setResponseAttributesMapper($static, "listQueryResponseAttributeMapper");
@@ -259,8 +259,8 @@ abstract class AbstractEntity implements \JsonSerializable {
      * @param $relationName
      * @param null $expand
      * @return mixed
-     * @throws \MoySklad\Exceptions\Relations\RelationIsList
-     * @throws \MoySklad\Exceptions\Relations\RelationDoesNotExistException
+     * @throws \rare\mysklad\Exceptions\Relations\RelationIsList
+     * @throws \rare\mysklad\Exceptions\Relations\RelationDoesNotExistException
      */
     public function loadRelation($relationName, $expand = null){
         return $this->relations->fresh($relationName, $expand);
@@ -269,10 +269,10 @@ abstract class AbstractEntity implements \JsonSerializable {
     /**
      * Get RelationListQuery object which van be used for getting, filtering and searching lists of relations
      * @param $relationName
-     * @return \MoySklad\Components\Query\RelationQuery
-     * @throws \MoySklad\Exceptions\Relations\RelationDoesNotExistException
-     * @throws \MoySklad\Exceptions\Relations\RelationIsSingle
-     * @throws \MoySklad\Exceptions\UnknownEntityException
+     * @return \rare\mysklad\Components\Query\RelationQuery
+     * @throws \rare\mysklad\Exceptions\Relations\RelationDoesNotExistException
+     * @throws \rare\mysklad\Exceptions\Relations\RelationIsSingle
+     * @throws \rare\mysklad\Exceptions\UnknownEntityException
      */
     public function relationListQuery($relationName){
         $static = get_called_class();
@@ -296,11 +296,11 @@ abstract class AbstractEntity implements \JsonSerializable {
 
     /**
      * Get entity metadata information
-     * @param MoySklad $sklad
+     * @param rare\mysklad $sklad
      * @return stdClass
      * @throws \Throwable
      */
-    public static function getMetaData(MoySklad $sklad){
+    public static function getMetaData(rare\mysklad $sklad){
         $res = $sklad->getClient()->get(
             ApiUrlRegistry::instance()->getMetadataUrl(static::$entityName)
         );

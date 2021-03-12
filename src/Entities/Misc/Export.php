@@ -1,8 +1,8 @@
 <?php
 
-namespace MoySklad\Entities\Misc;
+namespace rare\mysklad\Entities\Misc;
 
-use MoySklad\Entities\AbstractEntity;
+use rare\mysklad\Entities\AbstractEntity;
 
 class Export extends AbstractEntity  {
     public static $entityName = 'export';

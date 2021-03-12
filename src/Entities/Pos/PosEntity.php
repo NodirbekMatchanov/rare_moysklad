@@ -1,11 +1,11 @@
 <?php
 
-namespace MoySklad\Entities\Pos;
+namespace rare\mysklad\Entities\Pos;
 
-use MoySklad\Components\Http\RequestConfig;
-use MoySklad\Components\Specs\QuerySpecs\QuerySpecs;
-use MoySklad\Entities\AbstractEntity;
-use MoySklad\MoySklad;
+use rare\mysklad\Components\Http\RequestConfig;
+use rare\mysklad\Components\Specs\QuerySpecs\QuerySpecs;
+use rare\mysklad\Entities\AbstractEntity;
+use rare\mysklad\MoySklad;
 
 abstract class PosEntity extends AbstractEntity{
     public static $entityName = "_a_pos";

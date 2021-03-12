@@ -1,9 +1,9 @@
 <?php
 
-namespace MoySklad\Registers;
+namespace rare\mysklad\Registers;
 
-use MoySklad\Entities\Reports\AbstractReport;
-use MoySklad\Utils\AbstractSingleton;
+use rare\mysklad\Entities\Reports\AbstractReport;
+use rare\mysklad\Utils\AbstractSingleton;
 
 class ApiUrlRegistry extends AbstractSingleton {
     protected static $instance = null;
