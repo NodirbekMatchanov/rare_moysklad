@@ -1,0 +1,21 @@
+{
+    "name": "rare/yii2-moysklad",
+    "description": "Расширения для работы мой склад через апи JSON API 1.2",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nodirbek Matchanov",
+            "email": "nodirbekrare1@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "rare\\mysklad\\": ""
+        }
+    }
+}
