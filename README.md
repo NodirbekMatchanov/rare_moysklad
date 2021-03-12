@@ -5,7 +5,13 @@
 Библиотека для сервиса "Мой склад" JSON API 1.1. Некоторые примеры можно найти в "tests". Все ещё далека от завершения.
 
 ## Установка<br />
-    composer require tooyz/moysklad
+    php composer.phar require --prefer-dist rare/yii2-moysklad "*"
+    or add
+```
+"rare/yii2-moysklad": "*"
+```
+
+to the require section of your `composer.json` file.
     
 ## Класс MoySklad
 
